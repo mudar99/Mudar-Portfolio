@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .brand {
+    list-style-type: none;
+    display: flex;
+  }
+  .items {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
