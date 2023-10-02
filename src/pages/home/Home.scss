@@ -1,0 +1,47 @@
+@import "../../assets/styles/vars.scss";
+.home {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  .bio {
+    flex: 2;
+    margin-top: 100px;
+    .title {
+      color: $yellow-color;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.5;
+      .hello {
+        color: $light-font-color;
+      }
+    }
+    .desc {
+      font-size: 30px;
+      color: $light-font-color;
+    }
+  }
+
+  .image {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.dark {
+  .home {
+    .bio {
+      .title {
+        .hello {
+          color: $dark-font-color;
+        }
+      }
+      .desc {
+        color: $dark-font-color;
+      }
+    }
+  }
+}

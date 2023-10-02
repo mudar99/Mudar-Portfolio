@@ -1,16 +1,18 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Home from './pages/Home';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home/Home';
 import React from 'react'
+import About from './pages/about/About';
+import Education from './pages/education/Education';
 
 
 const AppRoutes = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/education" element={<Education />} />
+        </Routes>
     );
 }
 
