@@ -54,18 +54,11 @@
       }
 
       ul {
-        list-style-type: none;
-        margin-top: 20px;
         li {
-          display: flex;
-          margin: 20px;
           .left {
-            flex: 1;
-            font-weight: bold;
             color: $dark-font-color;
           }
           .right {
-            flex: 4;
             color: $dark-font-color;
           }
         }
@@ -101,6 +94,9 @@
           .left {
             margin-bottom: 10px;
           }
+          .right {
+            text-align: center;
+          }
         }
       }
     }
@@ -109,4 +105,12 @@
 
 @media screen and (max-width: $tablet-bp) {
   /* Add additional responsive styles for tablets if needed */
+  .about {
+    .image {
+      img {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
 }

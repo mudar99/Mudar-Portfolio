@@ -43,15 +43,21 @@ const NavBar = () => {
             About
           </li>
         </Link>
-        <Link to="education" onClick={() => setPlace("education")}>
-          <li className={`item ${place === "education" ? "visited" : ""}`}>
-            Education
+        <Link to="services" onClick={() => setPlace("services")}>
+          <li className={`item ${place === "services" ? "visited" : ""}`}>
+            Services
           </li>
         </Link>
-        <li className="item">Services</li>
-        <li className="item">Skills</li>
-        <li className="item">Projects</li>
-        <li className="item">Contact</li>
+        <Link to="skills" onClick={() => setPlace("skills")}>
+          <li className={`item ${place === "skills" ? "visited" : ""}`}>
+            Skills
+          </li>
+        </Link>
+        <Link to="projects" onClick={() => setPlace("projects")}>
+          <li className={`item ${place === "projects" ? "visited" : ""}`}>
+            Projects
+          </li>
+        </Link>
       </ul>
     </nav>
   );

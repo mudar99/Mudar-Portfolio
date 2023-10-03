@@ -18,6 +18,8 @@
   }
 
   .footer-social {
+    display: flex;
+    flex-direction: row;
     .social-icon {
       font-size: 24px;
       color: $light-font-color;
@@ -25,7 +27,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: $yellow-color; 
+        color: $yellow-color;
       }
     }
   }
@@ -43,9 +45,20 @@
       .social-icon {
         color: $dark-font-color;
         &:hover {
-          color: $yellow-color; 
+          color: $yellow-color;
         }
       }
     }
   }
 }
+
+// @media screen and (max-width: $tablet-bp) {
+//   .footer {
+//     .footer-social {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       gap: 10px;
+//     }
+//   }
+// }

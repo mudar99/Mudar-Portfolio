@@ -31,16 +31,20 @@ const About = () => {
             <span className="right">Syria, Damascus</span>
           </li>
           <li>
-            <span className="left">Study:</span>
-            <span className="right">Software Engineer</span>
-          </li>
-          <li>
             <span className="left">Email:</span>
             <span className="right">mudarabofakher@gmail.com</span>
           </li>
           <li>
             <span className="left">Phone:</span>
             <span className="right">+963 935 150 221</span>
+          </li>
+          <li>
+            <span className="left">Study:</span>
+            <span className="right">
+              Bachelor of Software Engineering,Damascus University, Syria.{" "}
+              <br />
+              2018-2023
+            </span>
           </li>
         </ul>
       </div>

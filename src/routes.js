@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import React from 'react'
 import About from './pages/about/About';
-import Education from './pages/education/Education';
+import Services from './pages/services/Services';
 
 
 const AppRoutes = () => {
@@ -11,7 +11,7 @@ const AppRoutes = () => {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/education" element={<Education />} />
+            <Route path="/services" element={<Services />} />
         </Routes>
     );
 }
