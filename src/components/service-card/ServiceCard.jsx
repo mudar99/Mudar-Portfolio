@@ -2,7 +2,7 @@ import React from "react";
 import "./ServiceCard.scss";
 const ServiceCard = ({ title, desc }) => {
   return (
-    <div className="service-card animate__animated animate__fadeInDown">
+    <div className="service-card animate__animated animate__fadeIn">
       <div className="title">{title}</div>
       <div className="desc">
         {desc?.map((item, index) => {

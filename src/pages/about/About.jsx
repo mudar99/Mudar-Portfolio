@@ -41,7 +41,7 @@ const About = () => {
           <li>
             <span className="left">Study:</span>
             <span className="right">
-              Bachelor of Software Engineering,Damascus University, Syria.{" "}
+              Bachelor of Software Engineering, Damascus University, Syria.{" "}
               <br />
               2018-2023
             </span>
