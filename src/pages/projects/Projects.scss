@@ -1,0 +1,20 @@
+@import "../../assets/styles/vars.scss";
+.projects {
+  min-height: 100vh;
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: $laptop-bp) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: $tablet-bp) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
