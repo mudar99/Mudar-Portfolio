@@ -12,7 +12,11 @@ const NavBar = () => {
   useEffect(() => {
     const place = location.pathname.slice(1);
     localStorage.setItem("tab", place);
-    setPlace(place);
+    if (place === "") {
+      setPlace("home");
+    } else {
+      setPlace(place);
+    }
   }, [location]);
 
   return (

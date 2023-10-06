@@ -1,11 +1,10 @@
 import React from "react";
-import aboutImage from "../../assets/images/home-image3.png";
 import "./About.scss";
 const About = () => {
   return (
     <div className="about">
       <div className="image animate__animated animate__slideInLeft">
-        <img src={aboutImage} alt="mudar-about" />
+        <img src={"/images/home-image3.png"} alt="mudar-about" />
       </div>
       <div className="information animate__animated animate__slideInRight">
         <div className="title">

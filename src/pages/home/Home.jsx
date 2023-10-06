@@ -1,5 +1,4 @@
 import React from "react";
-import homeImage from "../../assets/images/home-image.png";
 import "./Home.scss";
 const Home = () => {
   return (
@@ -18,7 +17,7 @@ const Home = () => {
         </p>
       </div>
       <div className="image animate__animated animate__slideInRight">
-        <img src={homeImage} alt="mudar-home"></img>
+        <img src="/images/home-image.png" alt="mudar-home"></img>
       </div>
     </div>
   );

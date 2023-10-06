@@ -1,34 +1,31 @@
-import TWS from "../../assets/images/covers/TWS.jpg"
-import AskFreelancer from "../../assets/images/covers/AskFreelancer.jpg"
-import Salleh from "../../assets/images/covers/Salleh.jpg"
-import ServeMe from "../../assets/images/covers/ServeMe.jpg"
-import RepoSharing from "../../assets/images/covers/RepoSharing.jpg"
-
-
 export const projects = [
-    {
-        title: "Together We Share",
-        desc: "Social media web application",
-        src: TWS
-    },
     {
         title: "Ask Freelancer",
         desc: "Freelance services web application",
-        src: AskFreelancer
+        src: "/images/covers/AskFreelancer.jpg",
+        url: "ask-freelancer"
     },
     {
         title: "Salleh",
         desc: "Car maintenance and equipment sales system",
-        src: Salleh
+        src: "/images/covers/Salleh.jpg",
+        url: "salleh"
     },
     {
         title: "Serve Me",
         desc: "Coordinating and hiring service providers and workshops for tasks",
-        src: ServeMe
+        src: "/images/covers/ServeMe.jpg",
+        url: "serve-me"
     },
     {
         title: "Repo Sharing",
         desc: "Collaborative File Sharing and Repository Management Platform",
-        src: RepoSharing
-    }
+        src: "/images/covers/RepoSharing.jpg",
+        url: "repo-sharing"
+    }, {
+        title: "Together We Share",
+        desc: "Social media web application",
+        src: "/images/covers/TWS.jpg",
+        url: "tws"
+    },
 ]

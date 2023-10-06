@@ -2,7 +2,8 @@
 .project-card {
   position: relative;
   text-align: center;
-
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
   .image {
     position: relative;
     img {
@@ -29,11 +30,26 @@
     font-size: 16px;
     color: $light-font-color;
   }
+
+  &:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+    .title,
+    .desc {
+      color: $yellow-color;
+    }
+  }
 }
 .dark {
   .project-card {
     .desc {
       color: $dark-font-color;
+    }
+    &:hover {
+      .title,
+      .desc {
+        color: $yellow-color;
+      }
     }
   }
 }

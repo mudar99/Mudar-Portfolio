@@ -19,12 +19,12 @@ body {
 
 .light {
   background-color: white;
-  color: #111;
+  color: $light-font-color;
 }
 
 .dark {
   background-color: #111;
-  color: #bbb;
+  color: $dark-font-color;
 }
 
 a {
