@@ -22,10 +22,10 @@
       color: $light-font-color;
       font-weight: bold;
       font-size: 20px;
-      text-align: left;
+      text-align: center;
     }
     p {
-      padding: 10px;
+      padding: 20px;
     }
   }
   &-gallery {
@@ -35,17 +35,49 @@
     border-radius: 10px;
     box-shadow: $shadow-style;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    .title {
+      color: $light-font-color;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .images-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
     img {
+      border-radius: 10px;
       max-width: 100%;
+      height: auto;
+    }
+  }
+  &-demo {
+    margin-top: 15px;
+    .title {
+      color: $light-font-color;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      padding: 25px 0;
+      border: 1px solid #e0e0e0;
+      background-color: $light-color;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      box-shadow: $shadow-style;
+    }
+    video {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 100%;
       height: auto;
     }
   }
   .sections {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     gap: 20px;
     .project-technologies {
       flex: 1;
@@ -65,7 +97,7 @@
         color: $light-font-color;
         font-weight: bold;
         font-size: 20px;
-        text-align: left;
+        text-align: center;
       }
       ul {
         list-style-type: disc;
@@ -84,6 +116,13 @@
         color: $dark-font-color;
       }
     }
+    &-gallery {
+      border: 1px solid $dark-color;
+      background-color: $dark-color;
+      .title {
+        color: $dark-font-color;
+      }
+    }
     .sections {
       .project-technologies,
       .project-requirements {
@@ -94,10 +133,24 @@
         }
       }
     }
+    &-demo {
+      margin-top: 15px;
+      .title {
+        color: $dark-font-color;
+        border: 1px solid $dark-color;
+        background-color: $dark-color;
+      }
+    }
   }
 }
 @media screen and (max-width: $laptop-bp) {
   .project {
+    &-gallery {
+      .images-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
     .sections {
       display: block;
     }
@@ -106,6 +159,12 @@
 
 @media screen and (max-width: $tablet-bp) {
   .project {
+    &-gallery {
+      .images-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+      }
+    }
     .sections {
       display: block;
     }

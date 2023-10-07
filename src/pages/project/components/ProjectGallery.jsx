@@ -1,18 +1,26 @@
 import React from "react";
+import { Image } from "primereact/image";
 
 const ProjectGallery = ({ images }) => {
   return (
     <div className="project-gallery">
-      {images?.map((item, index) => {
-        return (
-          <img
-            key={index}
-            className="image"
-            src={item}
-            alt={`mudar-galleria-${index}`}
-          />
-        );
-      })}
+      <div className="title">Project Gallery</div>
+      <div className="images-container">
+        {images?.map((item, index) => {
+          return (
+            <Image
+              className="image"
+              src={item}
+              key={index}
+              alt={`mudar-galleria-${index}`}
+              loading="lazy"
+              preview
+              downloadable
+              children={document.querySelector(".project-gallery")}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
