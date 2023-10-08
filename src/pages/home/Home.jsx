@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.scss";
+import CVButtom from "../../components/cv-buttom/CVButtom";
+
 const Home = () => {
   return (
     <div className="home">
@@ -10,11 +12,11 @@ const Home = () => {
         </div>
         <p className="desc">
           Software engineer with a passion for developing innovative. <br />
-          Well-versed in technology and writing code to create systems that are
-          reliable. <br />
-          Confident communicator, strategic thinker and innovative creator.
-          <br />
+          Experienced Front-end React JS developer with a passion for
+          innovation, adept at building websites from scratch with modern
+          technologies. Seeking opportunities to contribute to dynamic projects.
         </p>
+        <CVButtom />
       </div>
       <div className="image animate__animated animate__slideInRight">
         <img src="/images/home-image.png" alt="mudar-home"></img>

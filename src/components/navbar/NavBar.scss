@@ -6,6 +6,11 @@
   justify-content: space-between;
   align-items: center;
   .brand {
+    img {
+      width: 100px;
+      // padding-top: 10px;
+      height: auto;
+    }
     font-weight: bold;
     font-size: 18px;
     list-style-type: none;

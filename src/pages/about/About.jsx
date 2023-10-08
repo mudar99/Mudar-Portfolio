@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.scss";
+import CVButtom from "../../components/cv-buttom/CVButtom";
 const About = () => {
   return (
     <div className="about">
@@ -44,6 +45,15 @@ const About = () => {
               <br />
               2018-2023
             </span>
+          </li>
+          <li>
+            <span className="left">Honors:</span>
+            <span className="right">
+              Top 2 Projects in Software Engineering Department Exhibition
+            </span>
+          </li>
+          <li>
+            <CVButtom />
           </li>
         </ul>
       </div>

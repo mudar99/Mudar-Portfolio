@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import "./NavBar.scss";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "../../context/ThemeProvider";
-
 const NavBar = () => {
   const location = useLocation();
   const { toggle, mode } = useContext(ThemeContext);
@@ -22,7 +21,7 @@ const NavBar = () => {
   return (
     <nav className="navbar animate__animated animate__slideInDown">
       <div className="brand">
-        <li className="item">Mudar AF</li>
+        <img src={"/logo.png"} alt="mudar-logo"></img>
         <i
           className={`fa ${isMenuOpen ? "fa-times" : "fa-bars"}`}
           onClick={() => setIsMenuOpen((prevState) => !prevState)}
