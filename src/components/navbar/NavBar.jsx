@@ -27,9 +27,6 @@ const NavBar = () => {
           onClick={() => setIsMenuOpen((prevState) => !prevState)}
         ></i>
       </div>
-      {/* <div className="menu-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <i className={`fa ${isMenuOpen ? "fa-times" : "fa-bars"}`} />
-      </div> */}
       <ul
         className={`items animate__animated ${
           isMenuOpen ? "animate__bounceInDown open" : "  closed"
