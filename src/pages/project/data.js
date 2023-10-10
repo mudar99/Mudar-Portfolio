@@ -63,17 +63,37 @@ export const serveMe = {
 }
 export const repoSharing = {
     title: "Repo Sharing",
-    desc: "desc",
-    demo: "q.mp4",
-    gallery: ["q.png", "2.png", "3.png"],
-    technologies: ["React", "Bootstrap"],
-    requirements: ["s"]
+    desc: "I designed and developed a versatile platform that empowers users to efficiently collaborate on projects. This comprehensive system allows for the creation of repositories, seamless file uploads, and the option to reserve files for editing. Users can easily add members with customizable permissions, ensuring secure collaboration. The platform facilitates smooth file downloads, offers detailed monitoring logs, and fosters teamwork by enabling concurrent work among team members. Additionally, it includes the option for users to contribute to public repositories, promoting a sense of community and shared knowledge.    ",
+    demo: "/images/Repo Sharing/Repo_Sharing.mp4",
+    gallery: ["/images/Repo Sharing/1.png", "/images/Repo Sharing/2.png", "/images/Repo Sharing/3.png"],
+    technologies: ["React JS",
+        "Prime React UI library",
+        "Sass",
+        "Bootstrap (CSS framework)",
+        "Chonky library",
+        "Axios (Restful API)",
+    ],
+    requirements: ["User Registration and Authentication", "Repository Creation",
+        "File Upload and Storage", "File Booking and Editing", "User Management",
+        "File Download", "Monitoring and Logging", "Collaborative Editing"
+    ],
 }
 export const tws = {
     title: "Together We Share",
-    desc: "desc",
-    demo: "q.mp4",
-    gallery: ["q.png", "2.png", "3.png"],
-    technologies: ["React", "Bootstrap"],
-    requirements: ["s"]
+    desc: "I've created a dynamic and user-centric social media web application that combines the best features of popular social platforms. Users can seamlessly register, login, and interact with a user-friendly home page displaying posts from others. They can publish their own posts with descriptions and multimedia, engage with posts through likes, comments, and replies, and customize post privacy settings. The platform fosters connections by suggesting friends, managing friend requests, and maintaining a friend list. Users receive real-time notifications and can build a detailed profile with a bio, certifications, and more, enhancing their social media experience.",
+    demo: "/images/TWS/TWS.mp4",
+    gallery: ["/images/TWS/1.png", "/images/TWS/2.png", "/images/TWS/3.png",
+        "/images/TWS/4.png", "/images/TWS/5.png", "/images/TWS/6.png",
+        "/images/TWS/7.png", "/images/TWS/8.png", "/images/TWS/9.png", "/images/TWS/10.png"],
+    technologies: ["React JS",
+        "Bootstrap (CSS framework)",
+        "Css",
+        "Axios (Restful API)",
+    ],
+    requirements: ["User registration and authentication", "Feed displaying posts from others",
+        "Post creation and interaction", "Privacy settings", "Friend suggestions", "Friend requests",
+        "Manage and delete friends", "Support for interactions such as likes, comments, and replies",
+        "Notifications",
+        "Profile Section"
+    ]
 }
