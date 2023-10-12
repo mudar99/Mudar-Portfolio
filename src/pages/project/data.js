@@ -55,11 +55,32 @@ export const salleh = {
 }
 export const serveMe = {
     title: "Serve Me",
-    desc: "desc",
-    demo: "q.mp4",
-    gallery: ["q.png", "2.png", "3.png"],
-    technologies: ["React", "Bootstrap"],
-    requirements: ["s"]
+    desc: "A comprehensive platform that seamlessly coordinates and connects customers with a wide range of service providers and workshops, including those specializing in painting, tiling, gypsum board installation, wiring, electrical services, and more. The platform offers a plethora of features, from showcasing galleries of previous work to providing notifications for updates and interactions. Users can build personal portfolios to highlight their skills, request services from providers, review profiles of workshops and service professionals, monitor completed and incoming tasks, evaluate services received, and follow up on orders. Additionally, it allows for the addition of professions, service providers, new locations, and user interactions through reactions, comments, likes, and replies. User registration, search, filtering, and the management of members and tasks within workshops are all part of this all-encompassing service coordination and hiring platform.",
+    demo: "/images/Serve Me/ServeMe.mp4",
+    gallery: ["/images/Serve Me/1.png", "/images/Serve Me/2.png", "/images/Serve Me/3.png",
+        "/images/Serve Me/4.png", "/images/Serve Me/5.png", "/images/Serve Me/6.png",
+        "/images/Serve Me/7.png", "/images/Serve Me/8.png", "/images/Serve Me/9.png",
+        "/images/Serve Me/10.png", "/images/Serve Me/11.png", "/images/Serve Me/12.png",
+        "/images/Serve Me/13.png", "/images/Serve Me/14.png", "/images/Serve Me/15.png",
+        "/images/Serve Me/16.png", "/images/Serve Me/17.png", "/images/Serve Me/18.png",
+        "/images/Serve Me/19.png", "/images/Serve Me/20.png", "/images/Serve Me/21.png",
+        "/images/Serve Me/22.png", "/images/Serve Me/23.png", "/images/Serve Me/24.png",],
+    technologies: ["React JS",
+        "Material UI library",
+        "React Spring (Animation Library)",
+        "Sass",
+        "Recharts (charts library)",
+        "Redux state management",
+        "Axios (Restful API)",
+        "Firebase (Real Time Notifications)"],
+    requirements: [
+        "User Registration and Authentication", "Gallery for Previous Work",
+        "Notifications", "Personal Portfolios",
+        "Service Request", "Profile Reviews",
+        "Order Management", "Profession and Service Provider Addition",
+        "Locations and Places", "User Interactions",
+        "Search and Filtering", "Members and Tasks Management",
+    ]
 }
 export const repoSharing = {
     title: "Repo Sharing",
