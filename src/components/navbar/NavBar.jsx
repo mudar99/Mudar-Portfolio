@@ -6,7 +6,7 @@ const NavBar = () => {
   const location = useLocation();
   const { toggle, mode } = useContext(ThemeContext);
   const [place, setPlace] = useState("");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   useEffect(() => {
     const place = location.pathname.slice(1);
