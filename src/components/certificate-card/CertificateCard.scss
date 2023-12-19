@@ -1,6 +1,6 @@
 @import "../../assets/styles/vars.scss";
 
-.project-card {
+.certificate-card {
   position: relative;
   text-align: center;
   transition: 0.2s ease-in-out;
@@ -47,7 +47,7 @@
 }
 
 .dark {
-  .project-card {
+  .certificate-card {
     .desc {
       color: $dark-font-color;
     }

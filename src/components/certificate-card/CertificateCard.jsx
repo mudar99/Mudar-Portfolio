@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./ProjectCard.scss";
+import "./CertificateCard.scss";
 
-const ProjectCard = ({ title, src, desc }) => {
+const CertificateCard = ({ title, url, image }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const handleLoad = () => {
@@ -17,22 +17,21 @@ const ProjectCard = ({ title, src, desc }) => {
     // Additional logic for handling image load error
   };
   return (
-    <div className="project-card animate__animated animate__fadeIn">
+    <div className="certificate-card animate__animated animate__fadeIn">
       <div className="image">
         {isLoading ?
           <img
-            src={src}
+            src={image}
             alt={title}
             loading="lazy"
             onLoad={handleLoad}
             onError={handleError} />
           : <div>Loading ...</div>
         }
-        <div className="title">{title}</div>
       </div>
-      <div className="desc">{desc}</div>
+      <div className="desc">{title}</div>
     </div>
   );
 };
 
-export default ProjectCard;
+export default CertificateCard;
