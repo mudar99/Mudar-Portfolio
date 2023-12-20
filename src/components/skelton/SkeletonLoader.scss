@@ -4,13 +4,16 @@
     .p-skeleton {
         min-height: 20vh;
         background-color: $dark-font-color;
+
+        &:hover {
+            cursor: progress;
+        }
     }
 }
 
 .dark {
     .skeleton {
         .p-skeleton {
-            min-height: 20vh;
             background-color: $light-font-color;
         }
     }

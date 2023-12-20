@@ -31,9 +31,12 @@ const NavBar = () => {
         className={`items animate__animated ${isMenuOpen ? "animate__bounceInDown open" : "  closed"
           }`}
       >
-        <li className="item" onClick={toggle}>
-          <i className="fa">{mode === "light" ? "🌙" : "🔆"}</i>
-        </li>
+        <Link>
+          <li className="toggler" onClick={toggle}>
+            <i className="fa">{mode === "light" ? "🌙" : "🔆"}</i>
+          </li>
+        </Link>
+
         <Link to="home" onClick={() => setPlace("home")}>
           <li className={`item ${place === "home" ? "visited" : ""}`}>Home</li>
         </Link>

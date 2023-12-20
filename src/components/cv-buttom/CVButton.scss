@@ -22,9 +22,11 @@
   }
 
   .disabled {
+    background-color: gray;
+
     &:hover {
-      cursor: not-allowed;
       background-color: gray;
+      cursor: not-allowed;
     }
   }
 }

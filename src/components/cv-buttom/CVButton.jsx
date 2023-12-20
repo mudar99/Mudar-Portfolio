@@ -6,7 +6,7 @@ const CVButton = () => {
 
   const handleDownload = () => {
     setLoading(true);
-    console.log("ASDASDS")
+
     fetch("/Eng.Mudar Abo Fakher.pdf")
       .then((response) => response.blob())
       .then((blob) => {
