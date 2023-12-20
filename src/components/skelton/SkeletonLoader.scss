@@ -1,0 +1,17 @@
+@import "../../assets/styles/vars.scss";
+
+.skeleton {
+    .p-skeleton {
+        min-height: 20vh;
+        background-color: $dark-font-color;
+    }
+}
+
+.dark {
+    .skeleton {
+        .p-skeleton {
+            min-height: 20vh;
+            background-color: $light-font-color;
+        }
+    }
+}

@@ -1,33 +1,26 @@
 import React, { useState } from "react";
 import "./CertificateCard.scss";
+import SkeletonLoader from "../skelton/SkeletonLoader";
 
 const CertificateCard = ({ title, url, image }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-  const handleLoad = () => {
-    setIsLoading(false);
-    console.log("Done")
-    // Additional logic when image loading is completed
-    setIsLoading(true);
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
   };
 
-  const handleError = () => {
-    setIsLoading(false);
-    console.log("Error")
-    // Additional logic for handling image load error
-  };
   return (
     <div className="certificate-card animate__animated animate__fadeIn">
       <div className="image">
-        {isLoading ?
-          <img
-            src={image}
-            alt={title}
-            loading="lazy"
-            onLoad={handleLoad}
-            onError={handleError} />
-          : <div>Loading ...</div>
-        }
+        {!imageLoaded && (
+          <SkeletonLoader />
+        )}
+        <img
+          src={image}
+          alt={title}
+          loading="eager"
+          style={{ display: imageLoaded ? "block" : "none" }}
+          onLoad={handleImageLoaded} />
       </div>
       <div className="desc">{title}</div>
     </div>
