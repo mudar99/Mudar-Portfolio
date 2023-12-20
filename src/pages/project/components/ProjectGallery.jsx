@@ -1,40 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Image } from "primereact/image";
 import SkeletonLoader from "../../../components/skelton/SkeletonLoader";
 
 const ProjectGallery = ({ images }) => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState([]);
+  useEffect(() => {
+    setImageLoaded(new Array(images?.length).fill(false));
+  }, [images?.length]);
 
-  const handleImageLoaded = () => {
-    setImageLoaded(true);
+  const handleImageLoaded = (index) => {
+    setImageLoaded((prevState) => {
+      const updatedState = [...prevState];
+      updatedState[index] = true;
+      return updatedState;
+    });
   };
-  console.log(imageLoaded)
+
   return (
     <div className="project-gallery">
       <div className="title">Project Gallery</div>
       <div className="images-container">
         {images?.map((item, index) => {
           return (
-            <div key={index}>
-              {!imageLoaded && (
-                <SkeletonLoader />
-              )}
+            <React.Fragment key={index}>
+              {!imageLoaded[index] && <SkeletonLoader />}
               <Image
                 className="image"
                 src={item}
+                key={index}
                 alt={`mudar-galleria-${index}`}
                 loading="eager"
                 preview
                 downloadable
-                children={document.querySelector(".project-gallery")}
-                style={{ display: imageLoaded ? "block" : "none" }}
-                onLoad={handleImageLoaded}
+                style={{ display: imageLoaded[index] ? "block" : "none" }}
+                onLoad={() => handleImageLoaded(index)}
               />
-            </div>
+            </React.Fragment>
           );
         })}
       </div>
     </div>
+
   );
 };
 
