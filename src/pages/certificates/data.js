@@ -9,5 +9,9 @@ export const certificates = [
     url: "https://coursera.org/verify/6B8VGUZL9JPV",
     image: "/images/Certificates/Programming with JavaScript.png",
   },
-
+  {
+    title: "Participation in FMEE projects exhibition",
+    url: "https://drive.google.com/file/d/1s7KW_2r96VW3wilt77oQnmztMd07BjvB/view?usp=sharing",
+    image: "/images/Certificates/FMEE Participation.jpg",
+  },
 ];
