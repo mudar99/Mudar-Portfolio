@@ -10,6 +10,11 @@ export const certificates = [
     image: "/images/Certificates/Programming with JavaScript.png",
   },
   {
+    title: "Version Control",
+    url: "https://coursera.org/verify/DDJJ65Q3GMB7",
+    image: "/images/Certificates/Version Control.png",
+  },
+  {
     title: "Participation in FMEE projects exhibition",
     url: "https://drive.google.com/file/d/1s7KW_2r96VW3wilt77oQnmztMd07BjvB/view?usp=sharing",
     image: "/images/Certificates/FMEE Participation.jpg",
