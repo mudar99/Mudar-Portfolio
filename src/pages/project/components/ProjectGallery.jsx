@@ -29,7 +29,7 @@ const ProjectGallery = ({ images }) => {
                 src={item}
                 key={index}
                 alt={`mudar-galleria-${index}`}
-                loading="eager"
+                loading="lazy"
                 preview
                 downloadable
                 style={{ display: imageLoaded[index] ? "block" : "none" }}

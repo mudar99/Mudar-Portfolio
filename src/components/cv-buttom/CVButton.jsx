@@ -7,7 +7,7 @@ const CVButton = () => {
   const handleDownload = () => {
     setLoading(true);
 
-    fetch("/Eng.Mudar Abo Fakher.pdf")
+    fetch("/Mudar Abo Fakher.pdf")
       .then((response) => response.blob())
       .then((blob) => {
         const blobUrl = URL.createObjectURL(blob);

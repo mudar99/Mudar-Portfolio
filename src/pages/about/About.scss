@@ -1,18 +1,27 @@
 @import "../../assets/styles/vars.scss";
+
 .about {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
+
   .image {
-    flex: 1;
+    flex: 2;
+
+    img {
+      width: 100%;
+    }
   }
+
   .information {
     margin: 50px 0 0 70px;
     flex: 2;
+
     .title {
       margin-left: 20px;
+
       h2 {
         top: 0px;
         left: 0;
@@ -20,6 +29,7 @@
         font-weight: 900;
         color: $yellow-color;
       }
+
       p {
         color: $light-font-color;
       }
@@ -28,14 +38,17 @@
     ul {
       list-style-type: none;
       margin-top: 20px;
+
       li {
         display: flex;
         margin: 20px;
+
         .left {
           flex: 1;
           font-weight: bold;
           color: $light-font-color;
         }
+
         .right {
           flex: 4;
           color: black;
@@ -44,6 +57,7 @@
     }
   }
 }
+
 .dark {
   .about {
     .information {
@@ -58,6 +72,7 @@
           .left {
             color: $dark-font-color;
           }
+
           .right {
             color: $dark-font-color;
           }
@@ -74,10 +89,14 @@
     .image {
       display: block;
       text-align: center;
+      img{
+        width: 50vw;
+      }
     }
 
     .information {
       margin: 40px 0;
+
       .title {
         margin-left: 0;
         text-align: center;
@@ -91,9 +110,11 @@
         li {
           flex-direction: column;
           align-items: center;
+
           .left {
             margin-bottom: 10px;
           }
+
           .right {
             text-align: center;
           }
@@ -104,6 +125,7 @@
 }
 
 @media screen and (max-width: $tablet-bp) {
+
   /* Add additional responsive styles for tablets if needed */
   .about {
     .image {

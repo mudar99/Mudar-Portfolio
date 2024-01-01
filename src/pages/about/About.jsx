@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="image animate__animated animate__slideInLeft">
-        <img src={"/images/home-image3.png"} alt="mudar-about" loading="eager" />
+        <img src={"/images/about-image.png"} alt="mudar-about" loading="lazy" />
       </div>
       <div className="information animate__animated animate__slideInRight">
         <div className="title">
