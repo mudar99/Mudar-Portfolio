@@ -19,7 +19,11 @@ const Home = () => {
         <CVButtom />
       </div>
       <div className="image animate__animated animate__slideInRight">
-        <img src="/images/home-image.png" alt="mudar-home"></img>
+        <img
+          src="/images/home-image.png"
+          alt="mudar-home"
+          loading="eager"
+        ></img>
       </div>
     </div>
   );

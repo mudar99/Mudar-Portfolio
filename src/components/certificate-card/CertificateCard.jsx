@@ -18,7 +18,7 @@ const CertificateCard = ({ title, url, image }) => {
         <img
           src={image}
           alt={title}
-          loading="lazy"
+          loading="eager"
           style={{ display: imageLoaded ? "block" : "none" }}
           onLoad={handleImageLoaded} />
       </div>

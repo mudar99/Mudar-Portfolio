@@ -18,7 +18,7 @@ const ProjectCard = ({ title, src, desc }) => {
         <img
           src={src}
           alt={title}
-          loading="lazy"
+          loading="eager"
           style={{ display: imageLoaded ? "block" : "none" }}
           onLoad={handleImageLoaded}
         />

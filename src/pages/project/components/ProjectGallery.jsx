@@ -29,18 +29,17 @@ const ProjectGallery = ({ images }) => {
                 src={item}
                 key={index}
                 alt={`mudar-galleria-${index}`}
-                loading="lazy"
+                loading="eager"
                 preview
                 downloadable
                 style={{ display: imageLoaded[index] ? "block" : "none" }}
-                onLoad={() => handleImageLoaded(index)}
+                onLoadCapture={() => handleImageLoaded(index)}
               />
             </React.Fragment>
           );
         })}
       </div>
     </div>
-
   );
 };
 
