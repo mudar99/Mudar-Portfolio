@@ -15,6 +15,11 @@ export const certificates = [
     image: "/images/Certificates/Version Control.png",
   },
   {
+    title: "HTML and CSS in depth",
+    url: "https://coursera.org/verify/EEZZHMJBPGPV",
+    image: "/images/Certificates/HTML and CSS in depth.png",
+  },
+  {
     title: "Participation in FMEE projects exhibition",
     url: "https://drive.google.com/file/d/1s7KW_2r96VW3wilt77oQnmztMd07BjvB/view?usp=sharing",
     image: "/images/Certificates/FMEE Participation.jpg",
