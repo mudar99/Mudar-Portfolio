@@ -5,9 +5,18 @@ import ProjectTechnologies from "./components/ProjectTechnologies";
 import ProjectGallery from "./components/ProjectGallery";
 import ProjectDemo from "./components/ProjectDemo";
 import { useParams } from "react-router-dom";
-import { askFreelancer, repoSharing, salleh, serveMe, tws } from "./data";
+import {
+  askFreelancer,
+  repoSharing,
+  salleh,
+  serveMe,
+  tws,
+  mrapps,
+  blueOcean,
+} from "./data";
 import "./Project.scss";
 import ProjectRequirements from "./components/ProjectRequirements";
+
 const Project = () => {
   const { projectName } = useParams();
   const [data, setData] = useState();
@@ -28,6 +37,12 @@ const Project = () => {
         break;
       case "tws":
         setData(tws);
+        break;
+      case "mrapps":
+        setData(mrapps);
+        break;
+      case "blueocean":
+        setData(blueOcean);
         break;
       default:
         break;

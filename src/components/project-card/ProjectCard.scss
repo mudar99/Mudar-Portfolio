@@ -8,10 +8,11 @@
 
   .image {
     position: relative;
-
     img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      height: 250px;
     }
 
     .title {
@@ -52,7 +53,6 @@
     }
 
     &:hover {
-
       .title,
       .desc {
         color: $yellow-color;

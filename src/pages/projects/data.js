@@ -27,5 +27,15 @@ export const projects = [
         desc: "Social media web application",
         src: "/images/covers/TWS.jpg",
         url: "tws"
+    }, {
+        title: "Mr.Apps",
+        desc: "Software Company Website",
+        src: "/images/covers/Mr.Apps.jpg",
+        url: "mrapps"
+    }, {
+        title: "Blue Ocean",
+        desc: "Airline Ticket Reservations Application",
+        src: "/images/covers/BlueOcean.jpg",
+        url: "blueocean"
     },
 ]
