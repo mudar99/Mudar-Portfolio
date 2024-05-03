@@ -1,22 +1,27 @@
 @import "../../assets/styles/vars.scss";
+
 .home {
-  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
+  min-height: 67vh;
+
   .bio {
     flex: 2;
-    margin-top: 100px;
+    // margin-top: 100px;
+
     .title {
       color: $yellow-color;
       font-size: 40px;
       font-weight: bold;
       line-height: 1.5;
+
       .hello {
         color: $light-font-color;
       }
     }
+
     .desc {
       font-size: 30px;
       color: $light-font-color;
@@ -25,8 +30,12 @@
 
   .image {
     flex: 1;
+
     img {
-      height: 90vh;
+      width: 400px;
+      height: 60vh;
+      object-fit: cover;
+      object-position: top;
     }
   }
 }
@@ -39,6 +48,7 @@
           color: $dark-font-color;
         }
       }
+
       .desc {
         color: $dark-font-color;
       }
@@ -51,12 +61,15 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+
     .bio {
       margin-top: 20px;
       margin-bottom: 50px;
+
       .title {
         font-size: 30px;
       }
+
       .desc {
         font-size: 24px;
       }
@@ -65,6 +78,7 @@
     .image {
       display: block;
       text-align: center;
+
       img {
         max-width: 90%;
         height: auto;
@@ -79,6 +93,7 @@
       .title {
         font-size: 25px;
       }
+
       .desc {
         font-size: 20px;
       }

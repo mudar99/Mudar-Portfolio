@@ -1,11 +1,11 @@
 @import "../../assets/styles/vars.scss";
 
 .about {
-  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  min-height: 67vh;
 
   .image {
     flex: 2;
@@ -15,9 +15,37 @@
     }
   }
 
+  .image {
+    flex: 1;
+
+    img {
+      width: 500px;
+      height: 60vh;
+      object-fit: contain;
+      object-position: top;
+    }
+  }
+
   .information {
-    margin: 50px 0 0 70px;
+    margin: 50px 0 0 10px;
     flex: 2;
+
+    @media screen and (max-width: $screen-bp) {
+      ul {
+        li {
+          flex-direction: column;
+          align-items: center;
+
+          .left {
+            margin-bottom: 10px;
+          }
+
+          .right {
+            text-align: center;
+          }
+        }
+      }
+    }
 
     .title {
       margin-left: 20px;
@@ -89,7 +117,8 @@
     .image {
       display: block;
       text-align: center;
-      img{
+
+      img {
         width: 50vw;
       }
     }
@@ -106,20 +135,7 @@
         }
       }
 
-      ul {
-        li {
-          flex-direction: column;
-          align-items: center;
 
-          .left {
-            margin-bottom: 10px;
-          }
-
-          .right {
-            text-align: center;
-          }
-        }
-      }
     }
   }
 }
