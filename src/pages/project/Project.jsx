@@ -13,6 +13,8 @@ import {
   tws,
   mrapps,
   blueOcean,
+  cosmetics,
+  bloggerWebsite
 } from "./data";
 import "./Project.scss";
 import ProjectRequirements from "./components/ProjectRequirements";
@@ -41,8 +43,14 @@ const Project = () => {
       case "mrapps":
         setData(mrapps);
         break;
+      case "blogger-website":
+        setData(bloggerWebsite);
+        break;
       case "blueocean":
         setData(blueOcean);
+        break;
+      case "cosmetics":
+        setData(cosmetics);
         break;
       default:
         break;
