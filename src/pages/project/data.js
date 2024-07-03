@@ -207,3 +207,31 @@ export const blueOcean = {
         "Data organization for cars, cities, and countries",
     ]
 }
+// export const drPharmaCosmetics = {
+//     title: "Dr. Pharma's Cosmetics",
+//     desc: `Welcome to Dr. Pharma's Cosmetics, where science meets luxury in skincare. 
+//     I built this website for Dr. Pharmaceutical to showcase her exclusive range of pharmaceutical-grade cosmetics 
+//     designed to enhance your natural beauty and promote healthy skin. 
+//     The site features a curated selection of effective, safe, and luxurious products, providing a seamless shopping experience.`,
+//     demo: "/images/DrPharmaCosmetics/DrPharmaCosmetics.mp4",
+//     gallery: ["/images/DrPharmaCosmetics/1.png", "/images/DrPharmaCosmetics/2.png", "/images/DrPharmaCosmetics/3.png",
+//         "/images/DrPharmaCosmetics/4.png", "/images/DrPharmaCosmetics/5.png", "/images/DrPharmaCosmetics/6.png",
+//         "/images/DrPharmaCosmetics/7.png", "/images/DrPharmaCosmetics/8.png", "/images/DrPharmaCosmetics/9.png", "/images/DrPharmaCosmetics/10.png",
+//         "/images/DrPharmaCosmetics/11.png", "/images/DrPharmaCosmetics/12.png", "/images/DrPharmaCosmetics/13.png"],
+//     technologies: [
+//         "React JS",
+//         "Sass",
+//         "Redux state management",
+//         "Prime React",
+//         "Framer Motion",
+//         "Axios"
+//     ],
+//     functionalRequirements: [
+//         "Product catalog with detailed descriptions and pricing information",
+//         "About Us section highlighting Pharmaceutical Cosemetics",
+//         "User registration and login functionality",
+//         "Contact Us page with contact form and information",
+//         "Footer with links to important pages and social media profiles",
+//         "Responsive design for various devices",
+//     ]
+// }

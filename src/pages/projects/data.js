@@ -38,4 +38,16 @@ export const projects = [
         src: "/images/covers/BlueOcean.jpg",
         url: "blueocean"
     },
+    {
+        title: "Pharma's Cosmetics",
+        desc: "Scientific Luxury Skincare",
+        src: "/images/covers/Cosmetics.jpg",
+        url: "cosmetics"
+    },
+    {
+        title: "Blue Ocean",
+        desc: "Airline Ticket Reservations Application",
+        src: "/images/covers/BlueOcean.jpg",
+        url: "blueocean"
+    },
 ]
